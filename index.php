@@ -1,3 +1,5 @@
+<html>
+
 <!--
 	作者：youngyu2012@sina.com
 	时间：2015-05-18
@@ -6,7 +8,7 @@
 		  2.入侵检测
 		  3.日志系统
 -->
-<html>
+
 	<head>
 		<meta http-equiv='refresh' content='1' />
 	</head>

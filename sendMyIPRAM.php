@@ -1,4 +1,6 @@
-<!--
+<?php
+
+/*
 作者：youngyu2012@sina.com
 时间：2015-05-18
 描述：用于接受邀請方，通過上傳自身ip和連接隨機數ram來確定連接
@@ -10,8 +12,8 @@
 2 IPb已存在
 3 插入失败
 4 查询失败
--->
-<?php
+*/
+
 require 'conMySql.php';
 
 $flag1 = true;
@@ -40,6 +42,10 @@ else if (!$res1)
 else if (!$res2)
 	$array = array('status' => 4);
 else 
+{
 	$array = array('status' => 0, 'ip' => $ip);
+	$time = date('Y-m-d H:i:s',time());
+	$note = mysql_query('update state set `StateB`="'.$time.'" where `ID`='.$_POST["ram"].'');
+}
 echo json_encode($array);
 ?>
