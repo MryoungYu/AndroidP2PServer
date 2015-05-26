@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
  * 添加好友功能
  * 数据要求: 'num_src':自己的用户名，'num_obj':对方的手机号.
@@ -38,7 +38,7 @@ if ($row = mysql_fetch_array($res1)) {//验证目标手机号已经在数据库�
 	//将好友关系加入待确认表中
 	if (!isset($array))
 	{
-		$insert = mysql_query('insert into unack values(' . $k . ',' . $_POST['num_src'] . ',' . $_POST['num_obj'] . ')');
+		$insert = mysql_query('insert into unack(`ID`,`num1`,`num2`) values(' . $k . ',' . $_POST['num_src'] . ',' . $_POST['num_obj'] . ')');
 		$array = array('status' => 0);
 	}
 } else
