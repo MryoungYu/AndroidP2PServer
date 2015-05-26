@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
 	作者：youngyu2012@sina.com
@@ -10,7 +10,7 @@
 	添加：参数检查，当所传参数不满足A.B.C.D的IP地址格式时，拒绝申请，返回码为2(非法参数 Illegal Parameter)
 */
 
-require 'conMySql.php';
+require 'conMysql.php';
 $i = 0;
 //计数，检验当前繁忙程度
 do {

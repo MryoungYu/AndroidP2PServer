@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
 作者：youngyu2012@sina.com
@@ -14,7 +14,7 @@
 4 查询失败
 */
 
-require 'conMySql.php';
+require 'conMysql.php';
 
 $flag1 = true;
 $flag2 = true;

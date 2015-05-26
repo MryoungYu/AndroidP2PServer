@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
 作者：youngyu2012@sina.com
@@ -9,7 +9,7 @@
 		2.对话已关断 closed connection
 */
 
-require 'conMySql.php';
+require 'conMysql.php';
 $time = date('Y-m-d H:i:s',time());
 $res = mysql_query('select * from connection where `ID`=' . $_POST['ram']);
 if ($row = mysql_fetch_array($res)) {

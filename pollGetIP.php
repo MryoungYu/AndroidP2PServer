@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
 作者：youngyu2012@sina.com
@@ -8,7 +8,7 @@
 2.ram已失效
 */
 
-require 'conMySql.php';
+require 'conMysql.php';
 $res = mysql_query('select * from connection where `ID`=' . $_POST['ram']);
 $flag1 = true;
 if ($row = mysql_fetch_array($res)) {
